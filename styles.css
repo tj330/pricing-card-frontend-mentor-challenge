@@ -44,7 +44,7 @@ p {
 .lower {
     display: flex;
     height: 250px;
-    width:600px; 
+    width: 100%; 
     color: white; 
 }
 
@@ -62,9 +62,7 @@ h3{
     
     background-color: #2ab2af;
     height: 250px;
-    width: 300px;
-    border-bottom-left-radius: 10px;
-    
+    width: 50%;
 }
 
 .dolar {
@@ -101,9 +99,7 @@ button:hover {
 .right {
     background-color: #2EBFBD;
     height: 250px;
-    width: 300px;
-    border-bottom-right-radius: 10px;
-    
+    width: 50%;
 }
 
 .right-text {
@@ -121,5 +117,32 @@ button:hover {
     padding-top: 1.5px;
     padding-bottom: 1.5px;
     opacity: 0.8;
+}
+
+@media (max-width: 650px) {
+    .card-layout{
+        margin-top: 0;
+        margin-left: 0px;
+        width:100%;
+        height:auto;
+    }
+
+    .upper{
+        padding-left: 30px;
+        padding-bottom: 25px;
+    }
+    
+    .lower {
+        height: auto;
+        flex-direction: column;
+    }
+    .left,.right {
+        width:100%;
+        align-items: center;
+    }
+    .left-text, .right-text {
+        padding-left: 60px;
+    }
+    
 }
 
